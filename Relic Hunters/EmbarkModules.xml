@@ -1,0 +1,16 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Relic Hunter (Fin, the human)" Genotype="Mutated Human" Tile="RelicHunter/Relic_Hunter.png" Foreground="y" Detail="o" Background="K">
+                <code>H4sIAAAAAAAACs1W32vbMBB+L/R/EGaPbkhKGW0hD4m7X12ypU1IB6MPsn3YorJk5NNCCPnfd3LSxk7Y0o7OTSDYuu903+mzpLvF8RFjXsIz+AWmEFp5l8w7bbVbp+3zVufC80s8tELGFYcOObTXWKZjK6Eg8083ZmyxejxBk3kObtKP20ErSLnhEYLpu4hF68bG7v8JlEZyG5YTfNYrCshCOT8JxjQh99l0xd3dZOazwEq0BroKLBoufTayoRTRV5hP9AOorrJSrnIsk4k5ckrjKTsyvcOXpnZFQXbS25BQzEd/F3ZokSPE7LPNuKp57Wj5iC1XL0v/n7Uc2/BApaxltl/JtbsLOo5SLblpSsLyu1Hs4gBF3Mptv4xZThHbVUsBEqIyxubQrn6L6oCtN/Ba5L41Rs+ESlgg+ayocpS+U24EV0iubqHbaKBtiXWq9qX/XPIhaStyCWwAScPU30SSIpuKcrM1yjxKeUF6N0vaNwKRhO5rBQ0rPdFKRKwnJZhk3iz1R20iYHe8ekIbWTIdxVwbZN8xBfM23CtDs9QiA3Yl5BtQ96VQD+4Wm4ioWeYbS6Ftxq7pgFH5eBXyzeD+j7Wx86q1sYdoRGgRDrE4bie3vzqOtFBYjKyJ6LKFuM7pmhA0oBJMCXhf+yReLxFS4HwXmGibpHR5FrvQF4UgpUhARW4p53X0TkiZ6xndA5fsog59SLTz39iq287j+TiHcnecnJ3VgVvIuFCuimw1ASEtt+dag/qM/9hVBanWBYyRG6R8BjoqT8YB7qK/JfqMtnVrniO71nnOX9a9usf98dHyN5sywH6hDQAA
+</code>
+                <description>
+					&amp;c&#249;&amp;y You have the perfect set of skills to hunt relics and ride tombs.
+					&amp;c&#249;&amp;y This preset is made to be played with the pet {{b|jake}}, the dog.
+					&amp;c&#249;&amp;y {{W|High-risk, High-reward}} starting build
+					&amp;c&#249;&amp;y Preset by {{O|DANCEROGUE}}
+				</description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

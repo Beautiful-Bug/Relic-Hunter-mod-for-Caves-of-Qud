@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Dancerogue_RelicHunter_jake" Inherits="Dog"> <!-- colorear el nombre-->
+	  
+	<part Name="Description" Short="When he wanders around, you see a strange, shimmering silhouette crouching... sometimes it takes a few seconds to recognize that it's him, but he's just a dog, with five eyes, and a beautiful blue color. He does looks a little off, but he doesn't mind it. He forgot how to shapeshift back to his normal form, but he’s still your old best strechy friend. You can 'enter' and use him as an armor, just like old times. (He's willing to carry your relic-hunting gadgets). &amp;mphosphorescent&amp;y" />
+
+	<part Name="Render" DisplayName="{{O|jake}}, the {{b|dog}}" Tile="jake/jake#4.png" RenderString="d" ColorString="&amp;b" DetailColor="c" />
+	
+	<tag Name="StartingPet" />
+	<part Name="Corpse" BodyDrop="false" InventoryDrop="true"/>
+    <part Name="Brain" Hostile="false"/>
+
+			<part Name="Enclosing" AVBonus="8" DVBonus="16" />  <!-- TO DO: MECHA-->
+
+	  
+	  <stat Name="AV" Value="8" />
+	<stat Name="DV" Value="16" />
+    <stat Name="Hitpoints" Value="50" /> <!-- he needs to be tanky yo be your armor-->
+    <stat Name="Level" Value="15" /> <!--he´s older than you, hes your older brother!-->
+	<stat Name="Intelligence" Value="18" />
+	<stat Name="Willpower" Value="18" />
+	<stat Name="Ego" Value="16" />
+	  
+	<mutation Name="Regeneration" Level="10"/>
+	<mutation Name="DarkVision" Level="5"/>
+	<mutation Name="HeightenedStrength" Level="4"/>
+	<mutation Name="HeightenedHearing" />
+
+	<skill Name="Acrobatics"/>
+	  <skill Name="Acrobatics_SwiftReflexes"/>
+	  <skill Name="Acrobatics_Jump" />
+	<skill Name="Endurance" />
+	<skill Name="Tactics" />
+		<skill Name="Tactics_Run" />
+	<skill Name="Cudgel" />
+		<skill Name="Cudgel_Slam" />
+	<skill Name="Discipline" />
+	  <skill Name="Discipline_FastingWay" />
+	  <skill Name="Discipline_Lionheart" />
+	<skill Name="Endurance" />
+	  <skill Name="Endurance_Weathered" />
+	  <skill Name="Endurance_Calloused" />
+
+	<tag Name="Gender" Value="male" />
+	<tag Name="Species" Value="dog"/>
+	<tag Name="Role" Value="Skirmisher" />
+	  
+    <stat Name="ColdResistance" Value="10" />
+	<stat Name="AcidResistance" Value="10" />
+	<stat Name="HeatdResistance" Value="10" />
+	<stat Name="ElectricResistance" Value="10" />
+	
+	<part Name="Pettable" />
+	<tag Name="PetResponse" Value="high fives you,high fives you,high fives you with enthusiasm,stretches out of your reach,stretches and hugs you with his whole body,makes you a {{o|delicious}} sandwitch" />
+	<property Name="Story" Value="Relic Hunter Story" />
+
+	<tag Name="ExcludeFromDynamicEncounters" Value="true"/>
+	<inventoryobject Blueprint="Albino ape fist" Number="2" />
+	  <!-- INVENTARIO  Spiral Borer - Reprogrammable Recoiler  -->
+	  <inventoryobject Blueprint="Spiral Borer" Number="4" />
+	  <inventoryobject Blueprint="Reprogrammable Recoiler" Number="1" />
+	 
+
+  </object>
+	<object Name="Albino ape fist" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="jake's fist" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;o" />
+		<part Name="MeleeWeapon" BaseDamage="1d20-3" Skill="Cudgel" Stat="Strength" Slot="Foot"/>
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="SwingSound" Value="sfx_melee_naturalWeapon_fist_swing" />
+		<tag Name="BlockedSound" Value="sfx_melee_naturalWeapon_fist_blocked" />
+	</object>
+</objects>
