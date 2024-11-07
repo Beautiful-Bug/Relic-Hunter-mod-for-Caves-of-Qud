@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object Name="Dancerogue_RelicHunter_BaseKhopesh" Inherits="Long Sword3">
+		<part Name="Render" DisplayName="{{leafy|BaseKhopesh}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;G" DetailColor="K" />
+		<part Name="Commerce" Value="255" />
+		<part Name="Description" Short="A grass sword grown from a sword fern plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder." />
+		<part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d10+1d8-1d8" Skill="LongBlades" />
+		<part Name="BootSequence" BootTime="1" VerbOnBootInitialized="sprouts" VerbOnBootAborted="withers" VerbOnBootDone="shines" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_planty" />
+		<part Name="ZeroPointEnergyCollector" ChargeRate="80" World="JoppaWorld,OrbWorld" />
+		<part Name="Circuitry" />
+		<part Name="VibroWeapon" ChargeUse="20" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_foldedCarbide_wristblade_swing" />
+		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_fungalInfection_blocked" />
+		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_planty" />
+		<stag Name="Historical" />
+			<stat Name="Hitpoints" Value="300" />
+			<tag Name="BaseObject" Value="*noinherit" />
+			<stat Name="Hitpoints" Value="300" />
+			<part Name="Yurtmat" />
+			<part Name="AddsRep" Faction="Trees" Value="100" />		
+	</object>
+	<!-- BaseObject VibroKhopes--> <!-- sfx_equip_armor_planty - sfx_melee_vibroDagger_swing - sfx_melee_dagger_crysteel_swing - sfx_melee_foldedCarbide_wristblade_swing - sfx_melee_fungalInfection_blocked -->
+	<!-- <object Name="Base Khopesh" Inherits="Long Sword3">
+		<part Name="Render" DisplayName="{{leafy|BaseKhopesh}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;G" DetailColor="K" />
+		<part Name="Description" Short="A grass sword grown from a sword fern plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder." />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<part Name="Commerce" Value="255" />
+		<part Name="Cursed" RevealInDescription="false"/>
+		<part Name="Physics" Weight="5" Organic="true" FlameTemperature="99999" VaporTemperature="9999" />
+		<stat Name="Hitpoints" Value="300" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d10+1d8-1d8" Skill="LongBlades" />
+		<part Name="BootSequence" BootTime="0" VerbOnBootInitialized="sprouts" VerbOnBootAborted="withers" VerbOnBootDone="shines" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_planty" />
+		<part Name="ZeroPointEnergyCollector" ChargeRate="50" World="JoppaWorld,OrbWorld" />
+		<part Name="Circuitry" />
+		<part Name="LiquidVolume" MaxVolume="4" StartVolume="0-1" InitialLiquid="sap-1000" />
+		<part Name="LiquidProducer" Liquid="sap" Rate="100" FillSelfOnly="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnSelf="false" RequiresBodyPartCategory="Plant" NameForStatus="CirculatoryGraft" />
+		<part Name="VibroWeapon" ChargeUse="5" />
+		<tag Name="Tier" Value="8" />
+		<intproperty Name="Bleeds" Value="1" />
+		<tag Name="BleedLiquid" Value="sap-1000" />
+		<tag Name="LivePlant" />
+		<tag Name="Plant" />
+		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_foldedCarbide_wristblade_swing" />
+		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_vibro_blocked" />
+		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact" />
+		<stag Name="Historical" />
+	</object> -->
+
+	<!-- Kopesh 1 -->
+	<object Name="Nephrolepis" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+		<part Name="Render" DisplayName="{{leafy|Nephrolepis}} {{b|-}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;g" DetailColor="K" />
+			<part Name="Commerce" Value="100" />
+		<part Name="Description" Short="A grass sword grown from a 'Sword Fern' plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder, but may break on combat" />
+			<part Name="Physics" Weight="1" FlameTemperature="25000" VaporTemperature="5000" />
+			<part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d18-1d8" Skill="LongBlades" />
+			<part Name="BootSequence" BootTime="1" VerbOnBootInitialized="sprouts" VerbOnBootAborted="withers" VerbOnBootDone="shines" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_planty" />
+		<part Name="ZeroPointEnergyCollector" ChargeRate="80" World="JoppaWorld,OrbWorld" />
+		<part Name="Circuitry" />
+		<part Name="VibroWeapon" ChargeUse="20" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_foldedCarbide_wristblade_swing" />
+		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_fungalInfection_blocked" />
+		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_planty" />
+		<stag Name="Historical" />
+			<stat Name="Hitpoints" Value="100" />
+			<part Name="Cursed" RevealInDescription="false"/>
+			<part Name="CrumblesOnHit" Chance="0.1" />
+			<tag Name="Mods" Value="LongBladeMods,BladeMods,WeaponMods,CommonMods,ElectronicsMods" />
+	</object>
+
+	<!-- Kopesh 2 -->
+	<object Name="Polystichum" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+		<part Name="Render" DisplayName="{{leafy|Polystichum}} {{R|+}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;K" DetailColor="G"/>
+			<part Name="Commerce" Value="350" />
+		<part Name="Description" Short="A grass sword grown from a 'Sword Fern' plant, its stem aglow with glimmer, entwining with other flora through unseen rootways." />
+			<part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+			<part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d18-1d8" Skill="LongBlades" />
+			<part Name="BootSequence" BootTime="2" VerbOnBootInitialized="sprouts" VerbOnBootAborted="withers" VerbOnBootDone="shines" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_planty" />
+		<part Name="ZeroPointEnergyCollector" ChargeRate="80" World="JoppaWorld,OrbWorld" />
+		<part Name="Circuitry" />
+		<part Name="VibroWeapon" ChargeUse="20" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="Tier" Value="7" />
+		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_foldedCarbide_wristblade_swing" />
+		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_fungalInfection_blocked" />
+		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_planty" />
+		<stag Name="Historical" />
+			<stat Name="Hitpoints" Value="600" />
+				<tag Name="Mods" Value="None" />
+	</object>
+
+</objects>

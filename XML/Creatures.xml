@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+<!-- Preload -->
+  <object Name="Dancerogue_RelicHunter_jake" Inherits="Dog">
+	<part Name="Description" Short="You see a strange, shimmering silhouette lurking and wandering around… sometimes it takes a few seconds to recognize that it’s him—Jake. But he’s just a regular dog, with for legs, five eyes and a sleek, blue skin that almost seems to shimmer. He does look a little off, but he doesn’t mind it. Though he’s forgotten how to shapeshift back to his old self, he’s still your best stretchy friend. You remember you could 'enter' him, transforming his flexible body into a living suit of armor: Jake’s elastic form would wrap around you, encasing you in his pliant body, adding a reassuring yet uncanny layer of protection. It bolsters your defenses and enhances your dodge ability —though there's always the risk that it might not hold up in his strange, blue-hued mutated state. (He seems to believe you 'gave' him some of your stuff, like... as a 'gift.' And now it feels uncomfortable to ask for them back). &amp;mphosphorescent&amp;y" />
+	<part Name="Render" DisplayName="{{O|jake}}, the {{b|dog}}" Tile="jake/jake#4.png" RenderString="d" ColorString="&amp;b" DetailColor="c" />
+<!-- Setup -->
+		<part Name="Corpse" BodyDrop="false" InventoryDrop="true"/>
+		<part Name="Brain" Hostile="false" Wanders="True"/>
+		<part Name="NotNameable"/>
+		<part Name="Pettable"/>
+		
+<!-- tags        <tag Name="OpenSound" Value="sfx_interact_golem_enter" />
+	  <tag Name="ExitSound" Value="sfx_interact_golem_exit" /> -->
+	  <tag Name="StartingPet"/>
+	  <tag Name="Storied" Value="true"/>
+	 
+	  <tag Name="Role" Value="Skirmisher"/>
+	  <tag Name="PetResponse" Value="high fives you,high fives you,high fives you with enthusiasm!,stretches out of your reach...,stretches and hugs you with his whole body!,makes you a delicious sandwitch,he's bussy eating a delicious sandwitch"/>
+	  <tag Name="Gender" Value="male" />
+	  <tag Name="ExcludeFromDynamicEncounters" Value="true"/>
+
+<!-- Special    	<part Name="Interior" Cell="Jake" FallDistance="1" />
+		<part Name="Vehicle" Type="Jake" Passengers="4" Autonomous="true"/> -->
+		<property Name="Story" Value="Relic Hunter Story" />
+		<part Name="Enclosing" DVBonus="16" AVBonus="8"/>  <!-- TO DO: MECHA https://wiki.cavesofqud.com/wiki/Modding:Vehicles -->
+	
+
+<!-- stats -->
+		<stat Name="AV" sValue="7" /> <!--8-->
+		<stat Name="DV" sValue="10" /> <!--17-->
+		<stat Name="Hitpoints" Value="50" /> <!-- -->
+		<stat Name="Level" Value="16" /> <!--he´s older than you, hes your older brother!-->
+	  
+		<stat Name="Strength" sValue="18" />
+		<stat Name="Intelligence" sValue="16" />
+		<stat Name="Willpower" sValue="26" />
+		<stat Name="Ego" sValue="16" />
+	  
+		<stat Name="ColdResistance" sValue="12" />
+		<stat Name="AcidResistance" sValue="14" />
+		<stat Name="HeatResistance" sValue="10" />
+		<stat Name="ElectricResistance" sValue="9" />
+<!-- mutations -->
+		<mutation Name="Regeneration" Level="10"/>	  
+		<mutation Name="DarkVision" Level="5"/>
+		<!-- <mutation Name="PhotosyntheticSkin" Level="16"/>  +4 DV -->
+		<mutation Name="HeightenedStrength" Level="3"/> <!-- Str: 21 +2 -->
+		<mutation Name="HeightenedHearing" />
+		<mutation Name="AdrenalControl2" Level="12" /> <!-- Str: 23 +3 --> <!-- +6 DV -->
+<!-- skills -->
+	  <skill Name="Acrobatics"/>
+	  <skill Name="Acrobatics_SwiftReflexes"/>
+	  <skill Name="Acrobatics_Jump" />
+	<skill Name="Endurance" />
+	<skill Name="Tactics" />
+		<skill Name="Tactics_Run" />
+	<skill Name="Cudgel" />
+		<skill Name="Cudgel_Slam" />
+	<skill Name="Discipline" />
+	  <skill Name="Discipline_FastingWay" />
+	  <skill Name="Discipline_Lionheart" />
+	<skill Name="Endurance" />
+	  <skill Name="Endurance_Weathered" />
+	  <skill Name="Endurance_Calloused" />
+	
+<!-- INVENTARIO  Spiral Borer - Reprogrammable Recoiler  -->
+	<inventoryobject Blueprint="Dancerogue_RelicHunter_jakefist" Number="2" />	 
+	<inventoryobject Blueprint="Spiral Borer" Number="4" />
+	<inventoryobject Blueprint="Reprogrammable Recoiler" Number="1" />
+	<inventoryobject Blueprint="Nephrolepis" Number="3"/>
+	<inventoryobject Blueprint="Polystichum" Number="2"/>
+	 
+  </object> <!-- .................................................................................. FIN .................................................................................................... -->
+	<!-- pers: -->	
+	<!-- Fist -->
+	<object Name="Dancerogue_RelicHunter_jakefist" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="jake's fist" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;o" />
+		<tag Name="PartDescription" Value="Reziseable Hands" />
+		<part Name="MeleeWeapon" BaseDamage="1d10+1d8-1d8" Skill="Cudgel" Stat="Strength" Slot="Foot"/>
+		<!-- 1d10+1d8-1d8: mean= 5.5 // deviation= 4.33 // max= 17dmg min= -6 = 0dmg // 10dmg= %5.625 // 17dmg= %0.15625 // test roll: 9, -1, 7, 9, 0, 4, 4, -1, 2, 10, 7, 2, 14, 1, 10, 7, 15, 7 -->
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="SwingSound" Value="sfx_melee_naturalWeapon_fist_swing" />
+		<tag Name="BlockedSound" Value="sfx_melee_naturalWeapon_fist_blocked" />
+	</object>
+<!-- swords -->
+<!-- Mutations ? -->	
+</objects>
