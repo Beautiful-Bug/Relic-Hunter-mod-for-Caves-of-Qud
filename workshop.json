@@ -1,8 +1,8 @@
 {
   "WorkshopId": 3360638740,
-  "Title": "Relic Hunters: Raiders of Tombs and best Friends Forever ",
-  "Description": "Adds a Relic Hunter adventurer preset (Finn the Human) and his companion, Jake the Dog, to Caves of Qud. You might need to know about Adventure Time to understand some of the references. :)",
-  "Tags": "pet,preset,subtype,tile,tiles,Adventure Time,",
+  "Title": "Relic Hunters: Two Presets, Two Intricate Weapons & a Pet -mecha",
+  "Description": "Adds:\r\nA Relic Hunter adventurer preset.\r\n\r\nAnother Relic Hunter as a Plant-Person (inspired by Fern: a grass-made counterpart of Fin the Human).\r\n\r\nA pet, Jake the Dog, featuring a suit-armor mode —just like in the series (He acts as a mini-mecha).\r\n\r\nAnd two new custom weapons with interesting details to make them unique, diferent, and keep them balanced, currently in the possession of Jake the Dog!​ (He also has some of your relic-hunting gadgets)",
+  "Tags": "pet,tile,sprite,weapons,subtype,book,item,itemmod,creature,lore,balance,cosmetic,AdventureTime,preset",
   "Visibility": "2",
   "ImagePath": "preview.png"
 }
