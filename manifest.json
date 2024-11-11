@@ -1,9 +1,9 @@
 {
   "id": "Dancerogue_RelicHunters",
-  "title": "...Relic Hunters: 'riders of the tombs'... ",
-  "description": "Adds a Relic Hunter adventurer preset and his companion jake, The Dog to Caves of Qud. (You might need to know about Adventure Time to understand some references :) )",
-  "version": "0.1.0",
+  "title": "..Relic Hunters: 'raiders of the tombs' .. ",
+  "description": "Adds: -A Relic Hunter adventurer preset. -Another Relic Hunter as a Plant-Person (inspired by Fern: a grass-made counterpart of Fin the Human). -A pet, Jake the Dog, featuring a suit-armor mode —just like in the series (He acts as a mini-mecha). -And two new custom weapons with interesting details to make them unique, diferent, and keep them balanced, currently in the possession of Jake the Dog!​ (He also has some of your relic-hunting gadgets)",
+  "version": "1.2",
   "author": "Dancerogue",
-  "tags": "pet,preset,tile,tiles,Adventure Time,",
-  "PreviewImage": "preview.png"
+  "tags": "pet,tile,sprite,weapon,subtype,book,item,itemmod,creature,lore,balance,cosmetic,AdventureTime,preset",
+  "PreviewImage": "preview2.png"
 }
